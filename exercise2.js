@@ -1,4 +1,5 @@
-// Coding exercise from Stephen Grider's ES6 tutorial on udemy
+//From Stephen Grider's ES6 Javascript course on udemy.com
+// Coding Exercise 2: Processing Values
 
 // The array below contains an array of objects, each of which is a
 // representation of an image.

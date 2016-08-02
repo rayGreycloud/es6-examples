@@ -1,5 +1,5 @@
-// From Stephen Grider's ES6 course
-// Lecture 22 on complicated use of reduce helper
+//From Stephen Grider's ES6 Javascript course on udemy.com
+// Lecture 22 Complicated use of reduce helper
 
 // Write a function that takes a string of parens and
 // returns true if they are balanced (opening+closing)

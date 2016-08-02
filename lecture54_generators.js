@@ -1,4 +1,5 @@
-// ES6 Generator example
+//From Stephen Grider's ES6 Javascript course on udemy.com
+// Lecture 54 Generator example
 
 // object
 const engineeringTeam = {
