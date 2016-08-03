@@ -21,7 +21,7 @@ function double(arrayOfNumbers) {
 }
 console.log(double(numbers)) // expect [2,4,6]
 
-// my solution
+// my first solution
 
 const numbers = [1, 2, 3, 4, 5, 6];
 
@@ -29,6 +29,20 @@ function doubled(arrayOfNumbers) {
     const [number, ...rest] = arrayOfNumbers;
 
    if (arrayOfNumbers.length === 0) {
+      return number * 2;
+    } else {
+  		return [number * 2, ...doubled(rest)];
+    }
+}
+console.log(doubled(numbers)); // expect [2,4,6,8,10,12]
+
+// my second solution
+const numbers = [1, 2, 3, 4, 5, 6];
+
+function doubled(arrayOfNumbers) {
+    const [number, ...rest] = arrayOfNumbers;
+
+   if (number === undefined) {
       return number * 2;
     } else {
   		return [number * 2, ...doubled(rest)];
