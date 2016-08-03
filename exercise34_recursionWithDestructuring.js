@@ -22,25 +22,24 @@ function double(arrayOfNumbers) {
 console.log(double(numbers)) // expect [2,4,6]
 
 // my first solution
+const numbers = [1, 2, 3, 4, 5];
 
-const numbers = [1, 2, 3, 4, 5, 6];
+function doubled(array) {
+    const [number, ...rest] = array;
 
-function doubled(arrayOfNumbers) {
-    const [number, ...rest] = arrayOfNumbers;
-
-   if (arrayOfNumbers.length === 0) {
+   if (array.length === 0) {
       return number * 2;
     } else {
   		return [number * 2, ...doubled(rest)];
     }
 }
-console.log(doubled(numbers)); // expect [2,4,6,8,10,12]
+console.log(doubled(numbers)); // expect [2,4,6,8,10]
 
 // my second solution
-const numbers = [1, 2, 3, 4, 5, 6];
+const numbers = [1, 2, 3, 4, 5];
 
-function doubled(arrayOfNumbers) {
-    const [number, ...rest] = arrayOfNumbers;
+function doubled(array) {
+    const [number, ...rest] = array;
 
    if (number === undefined) {
       return number * 2;
@@ -48,4 +47,4 @@ function doubled(arrayOfNumbers) {
   		return [number * 2, ...doubled(rest)];
     }
 }
-console.log(doubled(numbers)); // expect [2,4,6,8,10,12]
+console.log(doubled(numbers)); // expect [2,4,6,8,10]
